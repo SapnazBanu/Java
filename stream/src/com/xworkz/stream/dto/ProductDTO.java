@@ -1,6 +1,8 @@
 package com.xworkz.stream.dto;
 
-public class ProductDTO implements Seriable<ProductDTO> {
+import java.io.Serializable;
+
+public class ProductDTO implements Serializable {
     private int id;
     private String name;
     private String vendor;
