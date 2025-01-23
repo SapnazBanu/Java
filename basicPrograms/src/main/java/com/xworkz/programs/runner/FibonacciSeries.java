@@ -4,21 +4,17 @@ import java.util.Scanner;
 
 public class FibonacciSeries {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter the number of terms: ");
-        int terms = scanner.nextInt();
-
-        int first = 0, second = 1;
-        System.out.print("Fibonacci Series: " + first + ", " + second);
-
-        for (int i = 3; i <= terms; i++) {
-            int next = first + second;
-            System.out.print(", " + next);
-            first = second;
-            second = next;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        int a=0,b=1;
+        int n=sc.nextInt();
+        for(int i=1;i<=n;i++)
+        {
+            System.out.println(a+" ");
+            int sum=a+b;
+            a=b;
+            b=sum;
         }
 
-        scanner.close();
     }
 }

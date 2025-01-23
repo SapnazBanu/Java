@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class StringReversed {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("enter input:");
-        String input = scanner.nextLine();
-        String reversed="";
-        for(int i=input.length()-1;i>=0;i--)
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a name:");
+        String name=sc.nextLine();
+        String reversed=" ";
+        for(int i=name.length() -1;i>=0;i--)
         {
-            reversed +=input.charAt(i);
+            reversed +=name.charAt(i);
         }
-        System.out.println("reversed string is :"+reversed);
-        scanner.close();
+        System.out.println(reversed+"");
     }
+
 }
